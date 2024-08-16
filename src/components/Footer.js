@@ -11,10 +11,10 @@ const Footer = () => {
           <a href="https://www.linkedin.com/in/rayaneissifou" className="text-blue-400 hover:text-blue-500 mx-2">
             LinkedIn
           </a>
-          <a href="https://github.com/rayaneissifou" className="text-blue-400 hover:text-blue-500 mx-2">
+          <a href="https://github.com/Rayster7" className="text-blue-400 hover:text-blue-500 mx-2">
             GitHub
           </a>
-          <a href="mailto:rayane@example.com" className="text-blue-400 hover:text-blue-500 mx-2">
+          <a href="mailto:rayane.issifou@gmail.com" className="text-blue-400 hover:text-blue-500 mx-2">
             Email
           </a>
           <a href="https://www.fiverr.com/rayaneissifou?public_mode=true" className="text-blue-400 hover:text-blue-500 mx-2">
