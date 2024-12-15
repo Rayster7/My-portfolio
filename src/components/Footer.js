@@ -8,19 +8,18 @@ const Footer = () => {
           &copy; {new Date().getFullYear()} Rayane ISSIFOU. All rights reserved.
         </p>
         <div className="mt-2">
-          <a href="https://www.linkedin.com/in/rayaneissifou" className="text-blue-400 hover:text-blue-500 mx-2">
+          <a href="https://www.linkedin.com/in/rayaneissifou" className="text-blue-400 hover:text-blue-500 mx-4">
             LinkedIn
           </a>
-          <a href="https://github.com/Rayster7" className="text-blue-400 hover:text-blue-500 mx-2">
+          <a href="https://github.com/Rayster7" className="text-blue-400 hover:text-blue-500 mx-4">
             GitHub
           </a>
-          <a href="mailto:rayane.issifou@gmail.com" className="text-blue-400 hover:text-blue-500 mx-2">
+          <a href="mailto:rayane.issifou@gmail.com" className="text-blue-400 hover:text-blue-500 mx-4">
             Email
           </a>
-          <a href="https://www.fiverr.com/rayaneissifou?public_mode=true" className="text-blue-400 hover:text-blue-500 mx-2">
+          <a href="https://www.fiverr.com/rayaneissifou?public_mode=true" className="text-blue-400 hover:text-blue-500 mx-4">
             Fiverr
           </a>
-          
         </div>
       </div>
     </footer>

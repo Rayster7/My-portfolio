@@ -1,9 +1,15 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import Services from '../components/Services';
 import About from '../components/About';
+import AOS from 'aos'; // Importer AOS
+import 'aos/dist/aos.css'; // Importer les styles d'AOS
 
 function HomePage() {
+  useEffect(() => {
+    AOS.init(); // Initialisation d'AOS
+  }, []);
+
   return (
     <div className="bg-gray-100 min-h-screen flex flex-col items-center py-10 px-4 rounded-2xl bg-opacity-80">
       {/* Header Section */}
@@ -15,12 +21,12 @@ function HomePage() {
       </header>
 
       {/* Optional About Section */}
-      <section className="w-full max-w-4xl mx-auto mb-12">
+      <section className="w-full max-w-4xl mx-auto mb-12" data-aos="fade-up" data-aos-duration="1000">
         <About />
       </section>
 
       {/* Skills & Tools Section */}
-      <section className="w-full max-w-4xl mx-auto mb-12 bg-white p-8 rounded-lg shadow-lg">
+      <section className="w-full max-w-4xl mx-auto mb-12 bg-white p-8 rounded-lg shadow-lg" data-aos="fade-up" data-aos-duration="1000">
         <h2 className="text-3xl font-semibold text-gray-800 mb-4">Skills & Tools</h2>
         <p className="text-gray-600 mb-4">
           Here are some of the key skills and tools I use in my work:
@@ -194,14 +200,14 @@ function HomePage() {
       </section>
 
       {/* Optional Services Section */}
-      <section className="w-full max-w-4xl mx-auto mb-12">
+      <section className="w-full max-w-4xl mx-auto mb-12" data-aos="fade-up" data-aos-duration="1000">
         <Services />
       </section>
 
       {/* Main Content */}
       <main className="w-full max-w-4xl mx-auto space-y-8">
         {/* Graphic Design Section */}
-        <section className="bg-white p-8 rounded-lg shadow-lg">
+        <section className="bg-white p-8 rounded-lg shadow-lg" data-aos="fade-up" data-aos-duration="1000">
           <h2 className="text-3xl font-semibold text-gray-800 mb-4">Graphic Design</h2>
           <p className="text-gray-600 mb-4">
             Explore my graphic design projects where creativity meets functionality. From branding to digital art, see how I can bring your ideas to life.
@@ -215,7 +221,7 @@ function HomePage() {
         </section>
 
         {/* Web Development Section */}
-        <section className="bg-white p-8 rounded-lg shadow-lg">
+        <section className="bg-white p-8 rounded-lg shadow-lg" data-aos="fade-up" data-aos-duration="1000">
           <h2 className="text-3xl font-semibold text-gray-800 mb-4">Web Development</h2>
           <p className="text-gray-600 mb-4">
             Check out my web development work where functionality meets elegance. I create responsive, user-friendly websites and web applications.
@@ -229,7 +235,7 @@ function HomePage() {
         </section>
 
         {/* Contact Section */}
-        <section className="bg-white p-8 rounded-lg shadow-lg">
+        <section className="bg-white p-8 rounded-lg shadow-lg" data-aos="fade-up" data-aos-duration="1000">
           <h2 className="text-3xl font-semibold text-gray-800 mb-4">Contact Me</h2>
           <p className="text-gray-600 mb-4">
             Have a question or want to discuss a project? Reach out to me and I’ll get back to you as soon as possible.
